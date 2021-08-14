@@ -16,7 +16,7 @@ def kimetsu_search(word,csv_name,csv_export_name):
     else:
         eel.view_log_js("『{}』はありません".format(word))
         # 追加
-        #add_flg=input("追加登録しますか？(0:しない 1:する)　＞＞　")
+        #add_flg=input("追加登録しますか？(0:しない 1:する)＞＞")
         #if add_flg=="1":
         source.append(word)
     
