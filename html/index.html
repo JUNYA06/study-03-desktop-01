@@ -7,23 +7,29 @@
     <body>
         <h2>eelテスト</h2>
         <div>
-        <tr>
-        <th>CSVファイル名</th>
-        <th><input id="csv_name" type="text"></input></td><br/>
-        </tr>
-        <tr>
-        <th>検索ワード</th>
-        <td><input id="search_word" type="text"></input></td>
-        </tr>
-        <button id = "search">検索</button>
+            <tr>
+            <th>CSVファイル名</th>
+            <th><input id="csv_name" type="text"></input></td><br/>
+            </tr>
+            <tr>
+            <th>検索ワード</th>
+            <td><input id="search_word" type="text"></input></td>
+            <button id = "search">検索</button><br/>
+            <th>CSV保存先</th>
+            <th><input id="csv_output_name" type="text"></input></td><br/>
+            </tr>
+            
         </div>
         <div>
         <textarea id ="result" class="log-view-area"></textarea>
         </div>
         <div><script type="text/javascript" src="./eel.js"></script></div>
+        
+            
+        <tr>
         <script>
             search.addEventListener('click', () => {
-                eel.kimetsu_search(search_word.value,csv_name.value)
+                eel.kimetsu_search(search_word.value,csv_name.value,csv_output_name.value)
             })
             
             eel.expose(view_log_js)
