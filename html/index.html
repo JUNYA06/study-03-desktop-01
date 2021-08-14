@@ -31,7 +31,7 @@
             search.addEventListener('click', () => {
                 eel.kimetsu_search(search_word.value,csv_name.value,csv_output_name.value)
             })
-            
+
             eel.expose(view_log_js)
             function view_log_js(text){
                 result.value += text + "\n"
